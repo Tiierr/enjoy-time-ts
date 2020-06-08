@@ -1,0 +1,19 @@
+{
+  "name": "enjoy-time",
+  "description": "Enjoy your time with different time bar",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "icons": {
+    "48": "./icons/icon_48.png",
+    "128": "./icons/icon_128.png"
+  },
+  "browser_action": {
+    "default_title": "enjoy-time"
+  },
+  "chrome_url_overrides": {
+    "newtab": "./index.html"
+  },
+  "permissions": [
+    "storage"
+  ]
+}
