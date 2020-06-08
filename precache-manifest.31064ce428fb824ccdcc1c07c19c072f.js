@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d5c8ca0b4a535caf42c6804581a7803e",
+    "revision": "da0da9a0942ff0e2b2d05c659dab0a3f",
     "url": "/enjoy-time-ts/index.html"
   },
   {
-    "revision": "65eddffd6d5b60589664",
-    "url": "/enjoy-time-ts/static/css/main.c6008681.chunk.css"
+    "revision": "4cf1c4b7aa3b51ba8551",
+    "url": "/enjoy-time-ts/static/css/main.5f3d3af4.chunk.css"
   },
   {
     "revision": "c0f9b3f75c08a68e3bb8",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/enjoy-time-ts/static/js/2.fafb9ff9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "65eddffd6d5b60589664",
+    "revision": "4cf1c4b7aa3b51ba8551",
     "url": "/enjoy-time-ts/static/js/main.2fbd8ea0.chunk.js"
   },
   {

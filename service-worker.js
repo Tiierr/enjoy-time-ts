@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/enjoy-time-ts/precache-manifest.734b02cdcf3f2d399f53885f6b5692c7.js"
+  "/enjoy-time-ts/precache-manifest.31064ce428fb824ccdcc1c07c19c072f.js"
 );
 
 self.addEventListener('message', (event) => {
