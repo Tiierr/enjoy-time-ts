@@ -9,6 +9,13 @@
     box-sizing: border-box
 }
 
+html {
+  overflow: hidden;
+  position:fixed;
+  height: 100%;
+  width:100%;
+}
+
 .App {
   background: var(--bright);
 }
@@ -21,7 +28,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-y: hidden;
 }
 
 .Title {
