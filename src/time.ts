@@ -50,14 +50,13 @@ function getSeconds(time: Seconds): Seconds{
   time.hour = HOUR;
   time.day = DAY;
 
-  const cm: Date = new Date(currentYear(), currentMonth(), 0);
-  const nm: Date = new Date(currentYear(), currentMonth() + 1, 0);
+  const cm: Date = new Date(currentYear(), currentMonth());
+  const nm: Date = new Date(currentYear(), currentMonth() + 1);
   time.month = (nm.valueOf() - cm.valueOf()) / 1000;
-
   const cy: Date = new Date(currentYear(), 0, 0);
   const ny: Date = new Date(currentYear() + 1, 0, 0);
   time.year = (ny.valueOf() - cy.valueOf()) / 1000;
-  
+
   return time;
 
 }
@@ -67,9 +66,9 @@ function getCurrentSeconds(time: Seconds): Seconds {
   time.minute = currentSecond();
   time.hour = currentMinute() * MINUTE + time.minute;
   time.day = currentHour() * HOUR + time.hour;
-  time.month = currentDate() * DAY + time.day;
-  const lastMonth = new Date(currentYear(), currentMonth(), 0);
-  const firstMonth = new Date(currentYear(), 0, 0);
+  time.month = (currentDate() - 1) * DAY + time.day;
+  const lastMonth = new Date(currentYear(), currentMonth());
+  const firstMonth = new Date(currentYear(), 0);
   time.year = time.month + (lastMonth.valueOf() - firstMonth.valueOf()) / 1000;
   return time
 }
